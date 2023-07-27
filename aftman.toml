@@ -1,0 +1,10 @@
+[tools]
+wally = "upliftgames/wally@0.3.2"
+rojo = "rojo-rbx/rojo@7.3.0"
+stylua = "johnnymorganz/stylua@0.17.1"
+selene = "kampfkarren/selene@0.25.0"
+luau-lsp = "johnnymorganz/luau-lsp@1.20.2"
+darklua = "seaofvoices/darklua@0.9.0"
+lune = "filiptibell/lune@0.6.7"
+wally-package-types = "johnnymorganz/wally-package-types@1.2.1"
+tarmac = "rojo-rbx/tarmac@0.7.3"

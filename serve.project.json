@@ -1,0 +1,14 @@
+{
+  "name": "serve",
+  "tree": {
+    "$className": "DataModel",
+    "ServerStorage": {
+      "Packages": {
+        "$className": "Folder",
+        "ms": {
+          "$path": "src"
+        }
+      }
+    }
+  }
+}

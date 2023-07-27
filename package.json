@@ -1,0 +1,30 @@
+{
+    "scripts": {
+        "prepare": "husky install",
+        "watch": "nodemon",
+        "build": "path-exists scripts/build.ps1 && pwsh scripts/build.ps1 || noop",
+        "format": "stylua src",
+        "lint": "selene src && stylua --check src",
+        "aftman:install": "aftman install",
+        "rojo:sourcemap": "rojo sourcemap default.project.json -o sourcemap.json",
+        "wally:install": "wally install",
+        "wally:export-types": "path-exists packages && wally-package-types -s sourcemap.json packages || noop",
+        "install:minimal": "npm run aftman:install && npm run wally:install",
+        "install": "npm run install:minimal && npm run rojo:sourcemap && npm run wally:export-types",
+        "i": "npm run install",
+        "ci": "npm run install:minimal"
+    },
+    "nodemonConfig": {
+        "watch": [
+            "src"
+        ],
+        "ext": "lua,luau,json,txt",
+        "exec": "npm run build"
+    },
+    "devDependencies": {
+        "husky": "^8.0.0",
+        "nodemon": "^3.0.1",
+        "noop-cli": "^2.0.0",
+        "path-exists-cli": "^2.0.0"
+    }
+}
