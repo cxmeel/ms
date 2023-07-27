@@ -3,17 +3,15 @@
 [vercel/ms]: https://github.com/vercel/ms
 [ms/releases]: https://github.com/csqrl/ms/releases
 [ms/wally]: https://wally.run/package/csqrl/ms
-[ms/npm]: https://npmjs.com/package/@csqrl/ms
 
 <!-- Shields -->
 
 [shields/github-release]: https://img.shields.io/github/v/release/csqrl/ms?label=latest+release&style=flat
 [shields/wally]: https://img.shields.io/endpoint?url=https://runkit.io/clockworksquirrel/wally-version-shield/branches/master/csqrl/ms&color=blue&label=wally&style=flat
-[shields/npm]: https://img.shields.io/npm/v/@csqrl/ms?style=flat
 
 # ms
 
-[![Latest GitHub version][shields/github-release]][ms/releases] [![Latest Wally version][shields/wally]][ms/wally] [![Latest NPM version][shields/npm]][ms/npm]
+[![Latest GitHub version][shields/github-release]][ms/releases] [![Latest Wally version][shields/wally]][ms/wally]
 
 Utility library to convert to/from milliseconds. Based on [vercel/ms][vercel/ms].
 
