@@ -1,8 +1,24 @@
 {
+    "name": "@csqrl-rbx/ms",
+    "version": "0.1.0",
+    "description": "Utility library to convert to/from milliseconds.",
+    "license": "MIT",
+    "repo": "csqrl/ms",
+    "funding": "https://github.com/sponsors/csqrl",
+    "author": "csqrl (https://github.com/csqrl)",
+    "main": "out/init.lua",
+    "types": "out/init.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "prepare": "husky install",
         "watch": "nodemon",
-        "build": "path-exists scripts/build.ps1 && pwsh scripts/build.ps1 || noop",
+        "build:luau": "path-exists scripts/build.ps1 && pwsh scripts/build.ps1 || noop",
+        "// build:ts": "rbxtsc --type=package",
+        "// build": "npm run build:luau && npm run build:ts",
+        "build": "npm run build:luau",
+        "prepublishOnly": "npm run build",
         "format": "stylua src",
         "lint": "selene src && stylua --check src",
         "aftman:install": "aftman install",
@@ -21,6 +37,10 @@
         "ext": "lua,luau,json,txt",
         "exec": "npm run build"
     },
+    "files": [
+        "out",
+        "!**/*.tsbuildinfo"
+    ],
     "devDependencies": {
         "husky": "^8.0.0",
         "nodemon": "^3.0.1",

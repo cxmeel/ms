@@ -1,6 +1,36 @@
+<!-- Links -->
+
+[vercel/ms]: https://github.com/vercel/ms
+[ms/releases]: https://github.com/csqrl/ms/releases
+[ms/wally]: https://wally.run/package/csqrl/ms
+[ms/npm]: https://npmjs.com/package/@csqrl/ms
+
+<!-- Shields -->
+
+[shields/github-release]: https://img.shields.io/github/v/release/csqrl/ms?label=latest+release&style=flat
+[shields/wally]: https://img.shields.io/endpoint?url=https://runkit.io/clockworksquirrel/wally-version-shield/branches/master/csqrl/ms&color=blue&label=wally&style=flat
+[shields/npm]: https://img.shields.io/npm/v/@csqrl/ms?style=flat
+
 # ms
 
-Utility library to convert to/from milliseconds. Based on [vercel/ms](https://github.com/vercel/ms).
+[![Latest GitHub version][shields/github-release]][ms/releases] [![Latest Wally version][shields/wally]][ms/wally] [![Latest NPM version][shields/npm]][ms/npm]
+
+Utility library to convert to/from milliseconds. Based on [vercel/ms][vercel/ms].
+
+## Installation
+
+### Installing with Wally
+
+Add an entry to your `wally.toml` file and run `wally install`.
+
+```toml
+[dependencies]
+ms = "csqrl/ms@x.x.x" # Replace x.x.x with the latest version
+```
+
+### GitHub Releases
+
+Pre-built binaries are available on the [releases][ms/releases] page. Download the latest `rbxm` file and drop it into Studio.
 
 ## Examples
 
