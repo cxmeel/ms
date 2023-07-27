@@ -3,6 +3,6 @@
 registry = "test"
 
 [[package]]
-name = "csqrl/sec"
+name = "csqrl/ms"
 version = "0.1.0"
 dependencies = []
