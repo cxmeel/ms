@@ -1,5 +1,8 @@
 [package]
 name = "csqrl/ms"
-version = "0.1.0"
+description = "https://csqrl.github.io/ms/ | Utility library to convert to/from milliseconds."
+version = "0.1.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+exclude = ["**"]
+include = ["src", "src/**", "wally.toml", "wally.lock", "default.project.json"]
